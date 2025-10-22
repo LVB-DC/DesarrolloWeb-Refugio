@@ -30,38 +30,44 @@
         </nav>
     </header>
 
-    <main>
+    <main class="principal">
         <h1>Contactanos</h1>
 
         <!-- Formulario -->
-        <section>
-            <h2>Dejanos un mensaje y te contactamos para coordinar una visita al refugio</h2>
+        <section class="formContacto">
             <form action="" method="post">
-                <div>
+                <div class="itemForm">
                     <label for="nombre">Nombre y Apellido:</label>
                     <input type="text" name="nombre" id="">
                 </div>
-                <div>
+                <div class="itemForm">
                     <label for="mail">E-Mail:</label>
                     <input type="email" name="mail" id="">
                 </div>
-                <div>
+                <div class="itemForm">
                     <label for="telefono">Nro de telefono:</label>
                     <input type="numer" name="telefono" id="">
                 </div>
-                <div>
+                <div class="itemForm">
+                    <label for="comentarios">Comentarios:</label>
                     <textarea name="comentarios" id="" cols="30" rows="10"></textarea>
                 </div>
-                <button type="button">Envíar</button>
+                <div class="boton">
+                    <button type="button">Envíar</button>
+                </div>
             </form>
         </section>
 
         <!-- Seccion mapa -->
-         <section>
-            <h2>Nuestra Sucursal</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52626.774190639306!2d-58.60002915136724!3d-34.47312550000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb0e15307e52f%3A0x89309926ac951c49!2sZoonosis%20Vicente%20L%C3%B3pez!5e0!3m2!1sen!2sar!4v1757536287848!5m2!1sen!2sar" 
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-         </section>
+        <section class="mapa">
+            <div>
+                <h2>Nuestra Sucursal</h2>
+            </div>
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52626.774190639306!2d-58.60002915136724!3d-34.47312550000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb0e15307e52f%3A0x89309926ac951c49!2sZoonosis%20Vicente%20L%C3%B3pez!5e0!3m2!1sen!2sar!4v1757536287848!5m2!1sen!2sar" 
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
@@ -72,7 +78,7 @@
         <img class="logo" src="../medios/logo.png" alt="logo">
     </footer>
 
-        <!-- Bootstrap JS -->
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
