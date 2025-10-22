@@ -1,20 +1,41 @@
 @use "../generales/variables.scss" as*;
 
-/* ============================================= */
 /* Header */
-
-/* Clases */
 .navegacion {
+    @include flex;
     background-color: $verdeOscuro;
 
-    .logo {
-        width: 60px;
+    .links {
+        @include flex;
+        align-items: start;
+        vertical-align: middle;
+        gap: 20px;
+        padding: 10px;
+
+        a {
+            font-family: $fontTitulos;
+            color: $azulOscuro;
+            text-decoration: none;
+        }
+    }
+
+    .areaLogo {
+        @include flex;
+        align-items: end;
+        gap: 20px;
+        padding-left: 1480px;
+
+        .logo {
+            width: 60px;
+        }
+
+        p {
+            color: $azulOscuro;
+            font-family: $fontTitulos;
+        }
     }
 }
 
-
-
-/* Etiquetas */
 header {
     background-color: $verdeOscuro;
 }
@@ -26,12 +47,8 @@ nav ul {
 nav li a {
     color: $blanco;
 }
-/* ============================================= */
-
-/* ============================================= */
 /* Footer */
 
-/* Etiquetas */
 .footer {
     background-color: $verdeOscuro;
     height: 80px;
@@ -40,4 +57,3 @@ nav li a {
         width: 60px;
     }
 }
-/* ============================================= */

@@ -1,0 +1,20 @@
+@use "../generales/variables.scss" as*;
+
+.carta {
+    width: 240px;
+
+    .cuerpoCarta {
+        background-color: $marronClaro;
+    }
+
+    .tituloCarta {
+        @include textoCarta;
+        font-size: 16px;
+        font-family: $fontTitulos;
+    }
+
+    .descCarta {
+        @include textoCarta;
+        font-family: $fontTexto;
+    }
+}

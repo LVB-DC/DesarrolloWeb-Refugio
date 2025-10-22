@@ -1,11 +1,7 @@
-/* 
-#0A400C - verde oscuro
-#19183B - azul oscuro
-#B1AB86 - marron claro
-#FEFAE0 - blanco
-*/
 /* Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Rubik+Bubbles&display=swap"); /* font-family: "Bagel Fat One", system-ui; */
+/* font-family: "Bagel Fat One", system-ui; */
+@import url("https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Rubik+Bubbles&display=swap");
+/* font-family: "Atma", system-ui; */
 @import url("https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Bagel+Fat+One&family=Rubik+Bubbles&display=swap");
 /* 
 #0A400C - verde oscuro
@@ -13,30 +9,46 @@
 #B1AB86 - marron claro
 #FEFAE0 - blanco
 */
-/* font-family: "Atma", system-ui; */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* 
-#0A400C - verde oscuro
-#19183B - azul oscuro
-#B1AB86 - marron claro
-#FEFAE0 - blanco
-*/
-/* ============================================= */
 /* Header */
-/* Clases */
 .navegacion {
+  display: flex;
+  flex-direction: row;
   background-color: #09520c;
 }
-.navegacion .logo {
+.navegacion .links {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  vertical-align: middle;
+  gap: 20px;
+  padding: 10px;
+}
+.navegacion .links a {
+  font-family: "Bagel Fat One", system-ui;
+  color: #19183B;
+  text-decoration: none;
+}
+.navegacion .areaLogo {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  gap: 20px;
+  padding-left: 1480px;
+}
+.navegacion .areaLogo .logo {
   width: 60px;
 }
+.navegacion .areaLogo p {
+  color: #19183B;
+  font-family: "Bagel Fat One", system-ui;
+}
 
-/* Etiquetas */
 header {
   background-color: #09520c;
 }
@@ -49,10 +61,7 @@ nav li a {
   color: #FEFAE0;
 }
 
-/* ============================================= */
-/* ============================================= */
 /* Footer */
-/* Etiquetas */
 .footer {
   background-color: #09520c;
   height: 80px;
@@ -61,13 +70,6 @@ nav li a {
   width: 60px;
 }
 
-/* ============================================= */
-/* 
-#0A400C - verde oscuro
-#19183B - azul oscuro
-#B1AB86 - marron claro
-#FEFAE0 - blanco
-*/
 h1 {
   text-align: center;
   text-decoration: underline;
@@ -104,72 +106,79 @@ section img {
   width: 160px;
 }
 
-/* 
-#0A400C - verde oscuro
-#19183B - azul oscuro
-#B1AB86 - marron claro
-#FEFAE0 - blanco
-*/
-.banner {
+.carta {
+  width: 240px;
+}
+.carta .cuerpoCarta {
+  background-color: #B1AB86;
+}
+.carta .tituloCarta {
+  text-align: center;
+  font-size: 16px;
+  font-family: "Bagel Fat One", system-ui;
+}
+.carta .descCarta {
+  text-align: center;
+  font-family: "Atma", system-ui;
+}
+
+.principal {
+  background-color: #FEFAE0;
+}
+.principal .banner {
   background-image: url(../medios/banner.jpg);
   height: 500px;
   background-position: center;
   background-size: cover;
 }
-.banner .subtitulo {
+.principal .banner .subtitulo {
   text-align: center;
   font-size: 20px;
   font-family: "Bagel Fat One", system-ui;
   color: #19183B;
 }
-
-.objetivo {
+.principal .objetivo {
   text-align: center;
 }
-.objetivo .bloque_texto {
+.principal .objetivo .bloque_texto {
   margin-left: 10%;
   margin-right: 10%;
   text-align: center;
   font-size: 18px;
 }
-
-.intro {
+.principal .intro {
   text-align: center;
 }
-
-.ayudados {
+.principal .ayudados {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   padding-bottom: 30px;
 }
-.ayudados .carta {
-  width: 240px;
-}
-.ayudados .carta .cuerpoCarta {
-  background-color: #B1AB86;
-}
-.ayudados .carta .tituloCarta {
-  text-align: center;
-  font-size: 16px;
-  font-family: "Bagel Fat One", system-ui;
-}
-.ayudados .carta .descCarta {
-  text-align: center;
-  font-family: "Atma", system-ui;
-}
 
-/* 
-#0A400C - verde oscuro
-#19183B - azul oscuro
-#B1AB86 - marron claro
-#FEFAE0 - blanco
-*/
-.bloque_texto {
+.principal {
+  background-color: #FEFAE0;
+}
+.principal .bloque_texto {
   margin-left: 10%;
   margin-right: 10%;
   text-align: center;
   font-size: 18px;
+}
+.principal .adopcion {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-bottom: 30px;
+}
+.principal .intro {
+  padding-top: 75px;
+  text-align: center;
+}
+.principal .acordeonFAQ {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 80px;
 }
 
 /*# sourceMappingURL=main.css.map */

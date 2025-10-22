@@ -1,15 +1,9 @@
-/* 
-#0A400C - verde oscuro
-#19183B - azul oscuro
-#B1AB86 - marron claro
-#FEFAE0 - blanco
-*/
-
 // Archivos parciales
 @use "./generales/variables.scss";
 @use "./generales/reset.scss";
 @use "./generales/headerFooter.scss";
 @use "./generales/etiquetas.scss";
+@use "./generales/carta.scss";
 
 @use "./page/index.scss";
 @use "./page/adopcion.scss";

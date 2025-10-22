@@ -1,55 +1,40 @@
 @use "../generales/variables.scss" as*;
 
-.banner {
-    background-image: url(../medios/banner.jpg);
-    height: 500px;
-    background-position: center;
-    background-size: cover;
-  
-    .subtitulo {
-    text-align: center;
-    font-size: 20px;
-    font-family: $fontTitulos;
-    color: $azulOscuro
-    }
-}
+.principal {
+    background-color: $blanco;
 
-.objetivo {
-    text-align: center;
+    .banner {
+        background-image: url(../medios/banner.jpg);
+        height: 500px;
+        background-position: center;
+        background-size: cover;
     
-    .bloque_texto {
-        margin-left: 10%;
-        margin-right: 10%;
+        .subtitulo {
         text-align: center;
-        font-size: 18px;
+        font-size: 20px;
+        font-family: $fontTitulos;
+        color: $azulOscuro
+        }
     }
-}
 
-.intro {
-    text-align: center;
-}
-
-.ayudados {
-    @include flex;
-
-    padding-bottom: 30px;
-
-    .carta {
-        width: 240px;
-
-        .cuerpoCarta {
-            background-color: $marronClaro;
+    .objetivo {
+        text-align: center;
+        
+        .bloque_texto {
+            margin-left: 10%;
+            margin-right: 10%;
+            text-align: center;
+            font-size: 18px;
         }
+    }
 
-        .tituloCarta {
-            @include textoCarta;
-            font-size: 16px;
-            font-family: $fontTitulos;
-        }
+    .intro {
+        text-align: center;
+    }
 
-        .descCarta {
-            @include textoCarta;
-            font-family: $fontTexto;
-        }
+    .ayudados {
+        @include flex;
+        justify-content: space-evenly;
+        padding-bottom: 30px;
     }
 }

@@ -15,32 +15,22 @@
 <body>
     <header>
         <!-- Menú de navegación -->
-        <nav class="navbar navbar-expand-lg navegacion">
-            <div class="container-fluid">
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                    <a class="nav-link" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">Adopción</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="../page/contacto.html">Contacto</a>
-                    </li>
-                </ul>
-                <a class="navbar-brand" href="#">
+        <nav class="navegacion">
+            <div class="links">
+                <a href="../index.html">Inicio</a>
+                <a href="#">Adopcion</a>
+                <a href="../page/contacto.html">Contacto</a>
+            </div>
+            <div class="areaLogo">
+                <a href="../index.html">
                     <img class="logo" src="../medios/logo.png" alt="Logo">
                 </a>
-                <span class="navbar-text">
-                    Refugio Pirulo
-                </span>
-                </div>
+                <p>Refugio Pirulo</p>
             </div>
         </nav>
     </header>
 
-    <main>
+    <main class="principal">
         <!-- Texto introductorio -->
         <section>
             <h1>En Adopción</h1>
@@ -54,37 +44,116 @@
         </section>
 
         <!-- Sección animales en adopción -->
+        <section class="adopcion">
+            <div class="card carta">
+                <img class="card-img-top" src="../medios/india.jpeg" alt="Golden retriever">
+                <div class="card-body cuerpoCarta">
+                    <h4 class="card-text tituloCarta">India - Hembra, 3 años</h4>
+                    <p class="card-text descCarta">Muy cariñosa, inteligente, y obediente.</p>
+                </div>
+            </div>
+            <div class="card carta">
+                <img class="card-img-top" src="../medios/lila.jpg" alt="Gata calico">
+                <div class="card-body cuerpoCarta">
+                    <h4 class="card-text tituloCarta">Lila - Hembra, 9 años</h4>
+                    <p class="card-text descCarta">Gata mayor muy tranquila.</p>
+                </div>
+            </div>
+            <div class="card carta">
+                <img class="card-img-top" src="../medios/coco.jpeg" alt="Gato atigrado">
+                <div class="card-body cuerpoCarta">
+                    <h4 class="card-text tituloCarta">Coco - Macho, 1 año</h4>
+                    <p class="card-text descCarta">Gato joven callejero, muy inteligente.</p>
+                </div>
+            </div>
+            <div class="card carta">
+                <img class="card-img-top" src="../medios/olaf.jpeg" alt="Perro joven blanco">
+                <div class="card-body cuerpoCarta">
+                    <h4 class="card-text tituloCarta">Olaf - Macho, 3 años</h4>
+                    <p class="card-text descCarta">Muy energético, no recomendado para hábitats pequeños.</p>
+                </div>
+            </div>
+            <div class="card carta">
+                <img class="card-img-top" src="../medios/freddie_mercury.jpeg" alt="Dos gatos naranjas">
+                <div class="card-body cuerpoCarta">
+                    <h4 class="card-text tituloCarta">Freddie y Mercury - Machos, 6 años</h4>
+                    <p class="card-text descCarta">Gatos hermanos inseparables.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección FAQ -->
         <section>
-            <div>
-                <p>India - Hembra, 3 años</p>
-                <p>Muy cariñosa, inteligente, y obediente.</p>
-                <img src="../medios/india.jpeg" alt="Golden retriever">
-                <p>-------------------------------------</p>
-            </div>
-            <div>
-                <p>Tota - Hembra, 6 meses</p>
-                <p>Cachorrita hermosa muy amorosa.</p>
-                <img src="../medios/tota.jpeg" alt="Cachorra">
-                <p>-------------------------------------</p>
-            </div>
-            <div>
-                <p>Freddie y Mercury - Machos, 6 años</p>
-                <p>Gatos hermanos inseparables.</p>
-                <img src="../medios/freddie_mercury.jpeg" alt="Dos gatos naranjas">
-                <p>-------------------------------------</p>
-            </div>
-            <div>
-                <p>Lila - Hembra, 9 años</p>
-                <p>Gata mayor muy tranquila.</p>
-                <img src="../medios/lila.jpg" alt="Gata calico">
-                <p>-------------------------------------</p>
-            </div>
-            <div>
-                <p>Olaf - Macho, 3 años</p>
-                <p>Muy energético, no recomendado para hábitats pequeños.</p>
-                <img src="../medios/olaf.jpeg" alt="Perro joven blanco">
-                <p>-------------------------------------</p>
-            </div>
+            <section class="intro">
+                <h2>FAQ</h2>
+                <p>Preguntas frecuentes</p>
+            </section>
+            <section class="acordeonFAQ">
+                <div class="accordion" id="acordeon">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                ¿Qué requisitos debe cumplit un adoptante?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#acordeon">
+                            <div class="accordion-body">
+                                <p>Para adoptar a un animal del refugio es necesario por encima de todo, querer a los animales y ser responsable para tenerlo. Una adopción hoy no puede acabar en un abandono mañana. Luego, es necesario ser mayor de edad, tener un domicilio en el que poder tener el animal adoptado, firmar un contrato de adopción y asumir los costos veterinarios.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                ¿En qué condiciones se entregan los animales en adopción del refugio? Microchip, vacunas, castración, etc...
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#acordeon">
+                            <div class="accordion-body">
+                                <p>Las condiciones en las que se entrega un animal en el refugio dependen sustancialmente del estado en el que se encuentra el mismo. Si está bien físicamente, si ha llegado herido, atropellado o enfermo y, por supuesto, de la edad del mismo.</p>
+                                <p>En cualquier caso, nuestro protocolo de adopción incluye siempre la vacunación, la identificación y la esterilización. Siempre que sea posible en el mismo momento en el que el animal sale del refugio y, si no es posible por las causas explicadas anteriormente, en las semanas posteriores a la misma. La adopción no se considera finalizada hasta que se realice todo lo anterior.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                ¿Puedo llevar al refugio un animal encontrado?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#acordeon">
+                            <div class="accordion-body">
+                                <p>Si un animal abandonado o maltratado necesita nuestra ayuda siempre habrá un espacio para él. Por favor llamar e informarse antes de pasar por el refugio para ver la disponibilidad de espacio, el caso en concreto, etc.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                ¿El refugio ofrece servicios veterinarios al público?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#acordeon">
+                            <div class="accordion-body">
+                                <p>Nuestros servicios veterinarios se limitan a las mascotas de nuestro refugio y actualmente no ofrecemos ningún tipo de servicio al público. Le recomendamos que busque en línea los veterinarios en su área y se contacte con un proveedor de atención médica para su mascota. Es esencial que le realicen un chequeo anual a su mascota y que cuente con un veterinario de confianza en caso de que tenga una emergencia médica.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                ¿Cómo puedo ayudar al refugio?
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#acordeon">
+                            <div class="accordion-body">
+                                <p>El refugio es mantenido por un sistema de voluntarios. Es necesario tener 16 años o más, y no se necesita experiencia con animales.</p>
+                                <p>Siempre necesitamos apoyo para pasear perros, limpiar, alimentar, socializar a los animales y colaborar en eventos o tareas administrativas. Si te interesa, dejanos un mensaje a través de la página de Contacto.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </section>
     </main>
 
