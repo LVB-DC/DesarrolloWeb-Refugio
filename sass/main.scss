@@ -12,35 +12,52 @@
 /* ============================================= */
 /* Header */
 
+/* Clases */
+.logo {
+    width: 150px;
+}
+
 /* Etiquetas */
-header
-{
+header {
     background-color: #0A400C;
 }
 
-nav ul
-{
+nav ul {
     list-style: none;
 }
 
-nav li a
-{
+nav li a {
     color: #FEFAE0;
-}
-
-/* Clases */
-.logo
-{
-    width: 150px;
 }
 /* ============================================= */
 
 /* ============================================= */
 /* Main */
 
+/* Clases */
+.banner {
+    background-image: url(../medios/banner.jpg);
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+  
+    .subtitulo {
+    text-align: center;
+    font-size: 20px;
+    font-family: "Bagel Fat One", system-ui;
+    color: #19183B
+    }
+}
+
+.bloque_texto {
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    font-size: 18px;
+}
+
 /* Etiquetas */
-h1
-{
+h1 {
     text-align: center;
     text-decoration: underline;
     font-size: 48px;
@@ -48,63 +65,32 @@ h1
     color: #19183B
 }
 
-h2
-{
+h2 {
     text-decoration: underline;
     font-size: 25px;
     font-family: "Bagel Fat One", system-ui;
     color: #19183B
 }
 
-h4
-{
+h4 {
     font-size: 14px;
     font-family: "Bagel Fat One", system-ui;
 }
 
-p
-{
+p {
     font-family: "Atma", system-ui;
 }
 
-label
-{
+label {
     font-family: "Atma", system-ui;
 }
 
-section
-{
+section {
     background-color: #FEFAE0;
 }
 
-section img
-{
+section img {
     width: 160px;
-}
-
-/* Clases */
-.banner
-{
-    background-image: url(../medios/banner.jpg);
-    height: 600px;
-    background-position: center;
-    background-size: cover;
-}
-
-.subtitulo
-{
-    text-align: center;
-    font-size: 20px;
-    font-family: "Bagel Fat One", system-ui;
-    color: #19183B
-}
-
-.bloque_texto
-{
-    margin-left: 10%;
-    margin-right: 10%;
-    text-align: center;
-    font-size: 18px;
 }
 /* ============================================= */
 
@@ -112,8 +98,7 @@ section img
 /* Footer */
 
 /* Etiquetas */
-footer
-{
+footer {
     background-color: #0A400C;
 }
 
