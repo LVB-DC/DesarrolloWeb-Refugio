@@ -1,0 +1,43 @@
+@use "../generales/variables.scss" as*;
+
+/* ============================================= */
+/* Header */
+
+/* Clases */
+.navegacion {
+    background-color: $verdeOscuro;
+
+    .logo {
+        width: 60px;
+    }
+}
+
+
+
+/* Etiquetas */
+header {
+    background-color: $verdeOscuro;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li a {
+    color: $blanco;
+}
+/* ============================================= */
+
+/* ============================================= */
+/* Footer */
+
+/* Etiquetas */
+.footer {
+    background-color: $verdeOscuro;
+    height: 80px;
+
+    .logo {
+        width: 60px;
+    }
+}
+/* ============================================= */

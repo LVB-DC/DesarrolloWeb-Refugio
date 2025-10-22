@@ -1,0 +1,37 @@
+@use "../generales/variables.scss" as*;
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 48px;
+    font-family: $fontTitulos;
+    color: $azulOscuro
+}
+
+h2 {
+    text-decoration: underline;
+    font-size: 25px;
+    font-family: $fontTitulos;
+    color: $azulOscuro
+}
+
+h4 {
+    font-size: 14px;
+    font-family: $fontTitulos;
+}
+
+p {
+    font-family: $fontTexto;
+}
+
+label {
+    font-family: $fontTexto;
+}
+
+section {
+    background-color: $blanco;
+}
+
+section img {
+    width: 160px;
+}

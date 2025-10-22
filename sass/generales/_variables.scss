@@ -1,0 +1,24 @@
+/* 
+#0A400C - verde oscuro
+#19183B - azul oscuro
+#B1AB86 - marron claro
+#FEFAE0 - blanco
+*/
+
+$verdeOscuro: #09520c;
+$azulOscuro: #19183B;
+$marronClaro: #B1AB86;
+$blanco: #FEFAE0;
+
+$fontTitulos: "Bagel Fat One", system-ui;
+$fontTexto: "Atma", system-ui;
+
+@mixin flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+@mixin textoCarta {
+    text-align: center;
+}

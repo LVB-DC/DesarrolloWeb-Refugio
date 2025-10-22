@@ -6,17 +6,39 @@
 */
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Rubik+Bubbles&display=swap"); /* font-family: "Bagel Fat One", system-ui; */
-@import url("https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Bagel+Fat+One&family=Rubik+Bubbles&display=swap"); /* font-family: "Atma", system-ui; */
+@import url("https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Bagel+Fat+One&family=Rubik+Bubbles&display=swap");
+/* 
+#0A400C - verde oscuro
+#19183B - azul oscuro
+#B1AB86 - marron claro
+#FEFAE0 - blanco
+*/
+/* font-family: "Atma", system-ui; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 
+#0A400C - verde oscuro
+#19183B - azul oscuro
+#B1AB86 - marron claro
+#FEFAE0 - blanco
+*/
 /* ============================================= */
 /* Header */
 /* Clases */
-.logo {
-  width: 150px;
+.navegacion {
+  background-color: #09520c;
+}
+.navegacion .logo {
+  width: 60px;
 }
 
 /* Etiquetas */
 header {
-  background-color: #0A400C;
+  background-color: #09520c;
 }
 
 nav ul {
@@ -29,29 +51,23 @@ nav li a {
 
 /* ============================================= */
 /* ============================================= */
-/* Main */
-/* Clases */
-.banner {
-  background-image: url(../medios/banner.jpg);
-  height: 600px;
-  background-position: center;
-  background-size: cover;
-}
-.banner .subtitulo {
-  text-align: center;
-  font-size: 20px;
-  font-family: "Bagel Fat One", system-ui;
-  color: #19183B;
-}
-
-.bloque_texto {
-  margin-left: 10%;
-  margin-right: 10%;
-  text-align: center;
-  font-size: 18px;
-}
-
+/* Footer */
 /* Etiquetas */
+.footer {
+  background-color: #09520c;
+  height: 80px;
+}
+.footer .logo {
+  width: 60px;
+}
+
+/* ============================================= */
+/* 
+#0A400C - verde oscuro
+#19183B - azul oscuro
+#B1AB86 - marron claro
+#FEFAE0 - blanco
+*/
 h1 {
   text-align: center;
   text-decoration: underline;
@@ -88,14 +104,72 @@ section img {
   width: 160px;
 }
 
-/* ============================================= */
-/* ============================================= */
-/* Footer */
-/* Etiquetas */
-footer {
-  background-color: #0A400C;
+/* 
+#0A400C - verde oscuro
+#19183B - azul oscuro
+#B1AB86 - marron claro
+#FEFAE0 - blanco
+*/
+.banner {
+  background-image: url(../medios/banner.jpg);
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+}
+.banner .subtitulo {
+  text-align: center;
+  font-size: 20px;
+  font-family: "Bagel Fat One", system-ui;
+  color: #19183B;
 }
 
-/* ============================================= */
+.objetivo {
+  text-align: center;
+}
+.objetivo .bloque_texto {
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+  font-size: 18px;
+}
+
+.intro {
+  text-align: center;
+}
+
+.ayudados {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-bottom: 30px;
+}
+.ayudados .carta {
+  width: 240px;
+}
+.ayudados .carta .cuerpoCarta {
+  background-color: #B1AB86;
+}
+.ayudados .carta .tituloCarta {
+  text-align: center;
+  font-size: 16px;
+  font-family: "Bagel Fat One", system-ui;
+}
+.ayudados .carta .descCarta {
+  text-align: center;
+  font-family: "Atma", system-ui;
+}
+
+/* 
+#0A400C - verde oscuro
+#19183B - azul oscuro
+#B1AB86 - marron claro
+#FEFAE0 - blanco
+*/
+.bloque_texto {
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+  font-size: 18px;
+}
 
 /*# sourceMappingURL=main.css.map */
