@@ -4,7 +4,8 @@
 .navegacion {
     @include flex;
     justify-content: space-between;
-    background-color: $verdeOscuro;
+    background: $verdeOscuro;
+    background: linear-gradient(137deg,rgba(9, 82, 12, 1) 13%, rgba(49, 176, 102, 1) 85%);
 
     .links {
         @include flex;
@@ -37,21 +38,10 @@
     }
 }
 
-header {
-    background-color: $verdeOscuro;
-}
-
-nav ul {
-    list-style: none;
-}
-
-nav li a {
-    color: $blanco;
-}
 /* Footer */
-
 .footer {
-    background-color: $verdeOscuro;
+    background: $verdeOscuro;
+    background: linear-gradient(137deg,rgba(9, 82, 12, 1) 13%, rgba(49, 176, 102, 1) 85%);
     height: 100px;
 
     .logo {
