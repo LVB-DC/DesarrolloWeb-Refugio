@@ -1,0 +1,126 @@
+@use "../generales/variables.scss" as*;
+
+@mixin cartaResponsive($tam) {
+    width: $tam;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+}
+
+// Celular
+@media (max-width: 480px) {    
+    .ayudados {
+        flex-wrap: wrap;
+
+        .carta {
+            @include cartaResponsive(180px);
+        }
+    }
+
+    .adopcion {
+        flex-wrap: wrap;
+        
+        .carta {
+            @include cartaResponsive(100px);
+
+            .tituloCarta {
+                font-size: 12px;
+            }
+
+            .descCarta {
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+// ================================================
+// Tablets Index
+@media (min-width:481px) and (max-width:579px) {
+    .ayudados {
+        flex-wrap: wrap;
+
+        .carta {
+            @include cartaResponsive(200px);
+
+            .tituloCarta {
+                font-size: 14px;
+            }
+
+            .descCarta {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media (min-width:580px) and (max-width:768px) {
+    .ayudados {
+        flex-wrap: wrap;
+
+        .carta {
+            @include cartaResponsive(240px);
+
+            .tituloCarta {
+                font-size: 16px;
+            }
+
+            .descCarta {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1000px) {
+    .ayudados {
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .carta {
+            @include cartaResponsive(300px);
+        }
+    }
+}
+// ================================================
+
+// ================================================
+// Tablets Adopcion
+@media (min-width:481px) and (max-width:768px) {
+    .adopcion {
+        flex-wrap: wrap;
+
+        .carta {
+            @include cartaResponsive(200px);
+
+            .tituloCarta {
+                font-size: 16px;
+            }
+
+            .descCarta {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media (min-width:769px) and (max-width:958px) {
+    .adopcion {
+        flex-wrap: wrap;
+
+        .carta {
+            @include cartaResponsive(200px);
+        }
+    }
+}
+
+@media (min-width:959px) and (max-width:1199px) {
+    .adopcion {
+        flex-wrap: wrap;
+
+        .carta {
+            @include cartaResponsive(260px);
+        }
+    }
+}
+// ================================================

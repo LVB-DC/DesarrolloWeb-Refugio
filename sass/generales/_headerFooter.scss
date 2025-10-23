@@ -3,6 +3,7 @@
 /* Header */
 .navegacion {
     @include flex;
+    justify-content: space-between;
     background-color: $verdeOscuro;
 
     .links {
@@ -23,7 +24,7 @@
         @include flex;
         align-items: end;
         gap: 20px;
-        padding-left: 1480px;
+        margin-right: 10px;
 
         .logo {
             width: 60px;
@@ -51,7 +52,7 @@ nav li a {
 
 .footer {
     background-color: $verdeOscuro;
-    height: 80px;
+    height: 100px;
 
     .logo {
         width: 60px;
